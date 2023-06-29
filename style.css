@@ -1,6 +1,8 @@
 :root{
     --cor-primaria: #000000;
-    --cor-rick:#F2EC91;
+    --cor-morty:#F2EC91;
+    --cor-botao:#233160;
+    --cor-rick: #30A2FF;
 }
 
 *{
@@ -10,24 +12,84 @@
 
 body{
     box-sizing: border-box;
-    background-color: var(--cor-rick);
 }
 
 .cabecalho{
-    padding: 2% 0% 0% 15%;
+    padding: 1% 0% 1% 1.1%;
+    background-color: var(--cor-morty);
 }
 
-.cabecalho__menu {
+
+.cabecalho__menu ul {
     display: flex;
-    gap: 80px;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.cabecalho_menu_links {
+.cabecalho__menu_link {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 200;
     color: var(--cor-primaria);
     text-decoration: none;
+    list-style: none;
+}
+
+.background__episodeos{
+    background-color: var(--cor-morty);
+}
+
+.background__sobre{
+    background-color: var(--cor-rick);
+}
+
+.personagem__morty{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: inherit;
+    background-color: var(--cor-morty);
+}
+
+
+.personagens__morty{
+    display: grid;
+    margin: 2em;
+}
+
+.personagem__rick{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: inherit;
+    background-color: var(--cor-rick);
+}
+.titulo__personagem{
+    text-align: center;
+}
+
+.caixa__morty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin: 1em;
+}
+
+.caixa__rick{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin: 1em;
+}
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.imagem__card{
+    width: 25%;
 }
 
 .apresentacao{
@@ -37,12 +99,6 @@ body{
     justify-content: space-between;
     gap: 82px;
 }
-.apresentacao__conteudo{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
 
 .apresentacao__links{
     display: flex;
@@ -50,4 +106,6 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 32px;
+    margin: 3em;
 }
+
