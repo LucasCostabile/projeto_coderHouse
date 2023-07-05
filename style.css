@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap');
+
 :root{
     --cor-primaria: #000000;
     --cor-morty:#F2EC91;
-    --cor-botao:#233160;
     --cor-rick: #30A2FF;
+    --cor-botao: #F2EAD3;
+    --branco-principal: #FFFFFF;
+
+    --fonte-primaria: 'Roboto', sans-serif;
+    --fonte-secundaria:'Poppins', sans-serif;
 }
 
 *{
@@ -27,11 +33,12 @@ body{
 }
 
 .cabecalho__menu_link {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 200;
     color: var(--cor-primaria);
     text-decoration: none;
     list-style: none;
+    font-family: var(--fonte-primaria);
 }
 
 .background__episodeos{
@@ -48,13 +55,12 @@ body{
     align-items: center;
     text-align: inherit;
     background-color: var(--cor-morty);
+
+    @media (max-width: 481px) {
+        grid-template-columns: 100%;
+    }
 }
 
-
-.personagens__morty{
-    display: grid;
-    margin: 2em;
-}
 
 .personagem__rick{
     display: grid;
@@ -62,9 +68,23 @@ body{
     align-items: center;
     text-align: inherit;
     background-color: var(--cor-rick);
+
+    @media (max-width: 481px) {
+        grid-template-columns: 100%;
+    }
 }
+
 .titulo__personagem{
     text-align: center;
+}
+
+.descricao__personagem{
+    font-family: var(--fonte-secundaria);
+}
+
+.botao__personagem{
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-botao);
 }
 
 .caixa__morty{
@@ -90,6 +110,14 @@ body{
 
 .imagem__card{
     width: 25%;
+
+    @media (max-width: 800px) {
+        width: 37%;
+    }
+
+    @media (max-width: 481px) {
+        width: 90%;
+    }
 }
 
 .apresentacao{
@@ -107,5 +135,36 @@ body{
     align-items: center;
     gap: 32px;
     margin: 3em;
+
+    @media (max-width: 481px) {
+        flex-direction:column;
+    }
 }
 
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+    @media (max-width: 481px) {
+        flex-direction: column;
+    }
+}
+
+.dispositivos {
+    text-align: center;
+    background-color: #000000;
+
+}
+
+.dispositivos__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 2.4rem;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    color: var(--branco-principal);
+}
