@@ -20,10 +20,17 @@ body{
     box-sizing: border-box;
 }
 
-.cabecalho{
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+.cabecalho {
     padding: 1% 0% 1% 1.1%;
-    background-color: var(--cor-morty);
-}
+    background-color: rgba(128, 0, 0, 0.8); /* Cor de fundo com tom sobreposto */
+  }
+  
 
 
 .cabecalho__menu ul {
