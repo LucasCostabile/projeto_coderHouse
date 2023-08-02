@@ -18,19 +18,49 @@
         </nav>
     </header>
     <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <div class="apresentacao__links">
-                <img class="imagem__card"src="./assets/Card.png" alt="card">
-                <img class="imagem__card"src="./assets/Card.png" alt="card">
-                <img class="imagem__card"src="./assets/Card.png" alt="card">
-            </div>
-            <div class="apresentacao__links">
-                <img class="imagem__card"src="./assets/Card.png" alt="card">
-                <img class="imagem__card"src="./assets/Card.png" alt="card">
-                <img class="imagem__card"src="./assets/Card.png" alt="card">
-            </div>
-        </section>
+    <section>
+        <form action="" method="get">
+        <h2>Busca de personagem:</h2>
+        <label for="characterId">Digite um numero para buscar um personagem</label>
+        <input type="number" name="characterId" id="characterId">
+            
+        <hr>
+        <br>
+        <br>
+        <br>
+        <h2>Informações:</h2>
+        <label for="name">Nome</label>
+        <input type="checkbox" name="name" id="name">
+
+        <label for="status">Status</label>
+        <input type="checkbox" name="status" id="status">
+
+        <label for="species">Espécie</label>
+        <input type="checkbox" name="species" id="species">
+
+        <label for="gender">Gênero</label>
+        <input type="checkbox" name="gender" id="gender">
+
+        <label for="origin">Planeta de origem</label>
+        <input type="checkbox" name="origin" id="origin">
+
+        <label for="episode">Episódios</label>
+        <input type="checkbox" name="episode" id="episode">
+
+        <hr>
+
+        <button type="submit" id="btn-go">Pesquisar</button>
+        <button type="reset" id="btn-reset">Limpar</button>
+        </form>
+
+        <div id="result-style">
+            <img src="" alt="" id="img">
+            <div id="content"></div>
+        </div>
+    </section>
     </main>
     <footer>
     </footer>
 </body>
+<script src="./script.js"></script>
+</html>

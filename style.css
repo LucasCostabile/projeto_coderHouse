@@ -20,17 +20,10 @@ body{
     box-sizing: border-box;
 }
 
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-.cabecalho {
+.cabecalho{
     padding: 1% 0% 1% 1.1%;
-    background-color: rgba(128, 0, 0, 0.8); /* Cor de fundo com tom sobreposto */
-  }
-  
+    background-color: var(--cor-morty);
+}
 
 
 .cabecalho__menu ul {
@@ -145,37 +138,12 @@ body{
     width: 50%;
 }
 
-.imagem__card{
-    width: 25%;
-
-    @media (max-width: 800px) {
-        width: 37%;
-    }
-
-    @media (max-width: 481px) {
-        width: 90%;
-    }
-}
-
 .apresentacao{
     padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 82px;
-}
-
-.apresentacao__links{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-    margin: 3em;
-
-    @media (max-width: 481px) {
-        flex-direction:column;
-    }
 }
 
 .dispositivos__lista {
@@ -290,3 +258,31 @@ body{
   .thank-you-message {
     text-align: center;
   }
+
+
+.input[type='number'] {
+    padding: 5px;
+    width: 50px;
+  }
+  
+.form label {
+    padding-left: 20px;
+  }
+  
+.result-style {
+    display: flex;
+    text-align: left;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 0.7);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+.img{
+    max-height: 200px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
