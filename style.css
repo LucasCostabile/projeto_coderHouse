@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap');
 
+/* Removido a cor ricky e cor morty */
 :root{
     --cor-primaria: #000000;
-    --cor-morty:#F2EC91;
-    --cor-rick: #30A2FF;
     --cor-botao: #F2EAD3;
     --branco-principal: #FFFFFF;
-
     --fonte-primaria: 'Roboto', sans-serif;
     --fonte-secundaria:'Poppins', sans-serif;
+
+    background-image: url("https://images5.alphacoders.com/633/633151.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150vh;
+    color: #ffffff;
 }
 
 *{
@@ -25,6 +30,69 @@ body{
     background-color: var(--cor-morty);
 }
 
+.cabecalho__menu_link {
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--fonte-primaria);
+    position: relative;
+    background-color: #15116496;
+    border-radius: 20px;
+}
+
+.cabecalho__menu_link a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor-primaria);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.cabecalho__menu_link a:hover::after{
+    width: 100%;
+}
+
+.background__episodeos{
+    background-color: var(--cor-morty);
+    /* Copiar o background-image do CSS1 */
+    background-image: url("https://images5.alphacoders.com/633/633151.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150vh;
+}
+
+.background__sobre{
+    background-color: var(--cor-rick);
+    /* Copiar o background-image do CSS1 */
+    background-image: url("https://images5.alphacoders.com/633/633151.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150vh;
+}
+
+/* O restante do CSS2 permanece inalterado */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    padding: 1% 0% 1% 1.1%;
+}
+
 
 .cabecalho__menu ul {
     display: flex;
@@ -35,7 +103,6 @@ body{
 .cabecalho__menu_link {
     font-size: 1.3rem;
     font-weight: 200;
-    color: var(--cor-primaria);
     text-decoration: none;
     list-style: none;
     font-family: var(--fonte-primaria);
@@ -230,7 +297,7 @@ body{
   
   .member h3 {
     margin: 0;
-    color: #202020;
+    color: #FFFFFF;
   }
   
   .member ul {
@@ -245,7 +312,7 @@ body{
   }
   
   .member ul li a {
-    color: rgb(0, 0, 0);
+    color: #FFFFFF;
     text-decoration: none;
     padding: 5px;
   }
@@ -285,4 +352,14 @@ body{
     max-height: 200px;
     padding-right: 20px;
     border-radius: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
