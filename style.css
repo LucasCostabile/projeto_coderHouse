@@ -8,11 +8,12 @@
     --fonte-primaria: 'Roboto', sans-serif;
     --fonte-secundaria: 'Poppins', sans-serif;
 
-    background-image: url("https://images5.alphacoders.com/633/633151.jpg");
+    background-image: url("https://static.wixstatic.com/media/e0c62a_30c75337670740d993615ed48f3c2805~mv2.png/v1/fill/w_1920,h_1229,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/e0c62a_30c75337670740d993615ed48f3c2805~mv2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 160vh;
+    background-attachment: fixed;
+    height: 200vh;
     color: #ffffff;
 }
 
@@ -59,25 +60,25 @@ body{
 
 .background__episodeos{
     background-color: var(--cor-morty);
-    /* Copiar o background-image do CSS1 */
-    background-image: url("https://images5.alphacoders.com/633/633151.jpg");
+    background-image: url("wixstatic");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     height: 150vh;
 }
 
 .background__sobre{
     background-color: var(--cor-rick);
-    /* Copiar o background-image do CSS1 */
-    background-image: url("https://images5.alphacoders.com/633/633151.jpg");
+    background-image: url("wixstatic");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     height: 150vh;
 }
 
-/* O restante do CSS2 permanece inalterado */
+/* O restante do CSS permanece inalterado */
 
 
 *{
