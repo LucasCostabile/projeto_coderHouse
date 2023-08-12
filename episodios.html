@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Rick And Morty</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="background__episodeos">
     <header class="cabecalho">
         <nav class="cabecalho__menu">
@@ -18,49 +20,63 @@
         </nav>
     </header>
     <main class="apresentacao">
-    <section>
-        <form action="" method="get">
-        <h2>Busca de personagem:</h2>
-        <label for="characterId">Digite um numero para buscar um personagem</label>
-        <input type="number" name="characterId" id="characterId">
-            
-        <hr>
-        <br>
-        <br>
-        <br>
-        <h2>Informações:</h2>
-        <label for="name">Nome</label>
-        <input type="checkbox" name="name" id="name">
+        <section>
+            <form action="" method="get">
 
-        <label for="status">Status</label>
-        <input type="checkbox" name="status" id="status">
+                <div class="input-checkbox">
+                    <h2>Busca de personagem:</h2>
+                    <label class="nome-label" for="characterId">Digite um numero até 600, para buscar um
+                        personagem</label>
+                    <input type="number" name="characterId" id="characterId">
+                </div>
 
-        <label for="species">Espécie</label>
-        <input type="checkbox" name="species" id="species">
+                <div class="input-checkbox">
+                    <h2>Informações:</h2>
+                    <label class="nome-label" for="name">Nome</label>
+                    <input type="checkbox" name="name" id="name">
+                </div>
 
-        <label for="gender">Gênero</label>
-        <input type="checkbox" name="gender" id="gender">
+                <div class="input-checkbox">
+                    <label class="nome-label" for="status">Status</label>
+                    <input type="checkbox" name="status" id="status">
+                </div>
 
-        <label for="origin">Planeta de origem</label>
-        <input type="checkbox" name="origin" id="origin">
+                <div class="input-checkbox">
+                    <label class="nome-label" for="species">Espécie</label>
+                    <input type="checkbox" name="species" id="species">
+                </div>
 
-        <label for="episode">Episódios</label>
-        <input type="checkbox" name="episode" id="episode">
+                <div class="input-checkbox">
+                    <label class="nome-label" for="gender">Gênero</label>
+                    <input type="checkbox" name="gender" id="gender">
+                </div>
 
-        <hr>
+                <div class="input-checkbox">
+                    <label class="nome-label" for="origin">Planeta de origem</label>
+                    <input type="checkbox" name="origin" id="origin">
+                </div>
 
-        <button type="submit" id="btn-go">Pesquisar</button>
-        <button type="reset" id="btn-reset">Limpar</button>
-        </form>
+                <div class="input-checkbox">
+                    <label class="nome-label" for="episode">Episódios</label>
+                    <input type="checkbox" name="episode" id="episode">
+                </div>
 
-        <div id="result-style">
-            <img src="" alt="" id="img">
-            <div id="content"></div>
-        </div>
-    </section>
+                <hr>
+                <div class="botao-input">
+                    <button class="botao-input" type="submit" id="btn-go">Pesquisar</button>
+                    <button class="botao-input" type="reset" id="btn-reset">Limpar</button>
+                </div>
+            </form>
+
+            <div id="result-style">
+                <img src="" alt="" id="img">
+                <div id="content"></div>
+            </div>
+        </section>
     </main>
     <footer>
     </footer>
 </body>
 <script src="./script.js"></script>
+
 </html>

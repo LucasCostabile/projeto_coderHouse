@@ -1,366 +1,362 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap');
 
-/* Removido a cor ricky e cor morty */
-:root{
-    --cor-primaria: #000000;
-    --cor-botao: #F2EAD3;
-    --branco-principal: #FFFFFF;
-    --fonte-primaria: 'Roboto', sans-serif;
-    --fonte-secundaria: 'Poppins', sans-serif;
+:root {
+  --cor-primaria: #000000;
+  --cor-morty: #F2EC91;
+  --cor-rick: #30A2FF;
+  --cor-botao: #F2EAD3;
+  --branco-principal: #FFFFFF;
 
-    background-image: url("https://static.wixstatic.com/media/e0c62a_30c75337670740d993615ed48f3c2805~mv2.png/v1/fill/w_1920,h_1229,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/e0c62a_30c75337670740d993615ed48f3c2805~mv2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 200vh;
-    color: #ffffff;
+  --fonte-primaria: 'Roboto', sans-serif;
+  --fonte-secundaria: 'Poppins', sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
+  background-image: url("https://static.wixstatic.com/media/e0c62a_30c75337670740d993615ed48f3c2805~mv2.png/v1/fill/w_1920,h_1229,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/e0c62a_30c75337670740d993615ed48f3c2805~mv2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.cabecalho{
-    padding: 1% 0% 1% 1.1%;
-    background-color: var(--cor-morty);
-}
-
-.cabecalho__menu_link {
-    font-size: 1.3rem;
-    font-weight: 200;
-    color: #ffffff;
-    text-decoration: none;
-    list-style: none;
-    font-family: var(--fonte-primaria);
-    position: relative;
-    background-color: #15116496;
-    border-radius: 20px;
-}
-
-.cabecalho__menu_link a::after{
-    content: " ";
-    width: 0%;
-    height: 2px;
-    background-color: var(--cor-primaria);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
-}
-
-.cabecalho__menu_link a:hover::after{
-    width: 100%;
-}
-
-.background__episodeos{
-    background-color: var(--cor-morty);
-    background-image: url("wixstatic");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 150vh;
-}
-
-.background__sobre{
-    background-color: var(--cor-rick);
-    background-image: url("wixstatic");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 150vh;
-}
-
-/* O restante do CSS permanece inalterado */
-
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    box-sizing: border-box;
-}
-
-.cabecalho{
-    padding: 1% 0% 1% 1.1%;
+.cabecalho {
+  padding: 1% 0% 1% 1.1%;
 }
 
 
 .cabecalho__menu ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .cabecalho__menu_link {
-    font-size: 1.3rem;
-    font-weight: 200;
-    text-decoration: none;
-    list-style: none;
-    font-family: var(--fonte-primaria);
-    position: relative;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--branco-principal);
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--fonte-primaria);
+  position: relative;
 }
 
-.cabecalho__menu_link a::after{
-    content: " ";
-    width: 0%;
-    height: 2px;
-    background-color: var(--cor-primaria);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
+.cabecalho__menu_link a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: var(--branco-principal);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
 }
 
-.cabecalho__menu_link a:hover::after{
-    width: 100%;
+.cabecalho__menu_link a:hover::after {
+  width: 100%;
 }
 
-.background__episodeos{
-    background-color: var(--cor-morty);
+.personagem__morty {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  text-align: inherit;
+
+  @media (max-width: 481px) {
+    grid-template-columns: 100%;
+  }
 }
 
-.background__sobre{
-    background-color: var(--cor-rick);
-}
+.personagem__rick {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  text-align: inherit;
 
-.personagem__morty{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    text-align: inherit;
-    background-color: var(--cor-morty);
-
-    @media (max-width: 481px) {
-        grid-template-columns: 100%;
-    }
+  @media (max-width: 481px) {
+    grid-template-columns: 100%;
+  }
 }
 
 
-.personagem__rick{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    text-align: inherit;
-    background-color: var(--cor-rick);
 
-    @media (max-width: 481px) {
-        grid-template-columns: 100%;
-    }
+.titulo__personagem {
+  color: var(--branco-principal);
+  text-align: center;
 }
 
-.titulo__personagem{
-    text-align: center;
+.descricao__personagem {
+  font-family: var(--fonte-secundaria);
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--branco-principal);
 }
 
-.descricao__personagem{
-    font-family: var(--fonte-secundaria);
+.botao__personagem {
+  font-family: var(--fonte-secundaria);
+  background-color: var(--cor-botao);
+  border-radius: 50px;
+  width: 50%;
+  font-size: 15px;
+  font-weight: 800;
 }
 
-.botao__personagem{
-    font-family: var(--fonte-secundaria);
-    background-color: var(--cor-botao);
-}
-
-.caixa__morty{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    gap: 12px;
-    margin: 1em;
-    transition: all 0.5s;
+.caixa__morty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  gap: 12px;
+  margin: 1em;
+  padding: 1em;
+  transition: all 0.5s;
 }
 
 .caixa__morty:hover {
-    transform: scale(1.1);
-    transition: all 0.4s;
-    z-index: 10;
+  transform: scale(1.1);
+  transition: all 0.4s;
+  z-index: 10;
 }
 
-.caixa__rick{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    gap: 12px;
-    margin: 1em;
-    transition: all 0.5s;
+.caixa__rick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  gap: 12px;
+  margin: 1em;
+  padding: 1em;
+  transition: all 0.5s;
 }
 
 .caixa__rick:hover {
-    transform: scale(1.1);
-    transition: all 0.4s;
-    z-index: 10;
-}
-.apresentacao__imagem {
-    width: 50%;
+  transform: scale(1.1);
+  transition: all 0.4s;
+  z-index: 10;
 }
 
-.apresentacao{
-    padding: 5% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 82px;
+.apresentacao__imagem {
+  width: 50%;
+}
+
+.apresentacao {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.input-checkbox {
+  margin: 20px;
+  font-family: var(--fonte-primaria);
+  color: var(--branco-principal);
+
+  h2 {
+    font-weight: 700;
+  }
+}
+
+.botao-input {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  width: 45%;
+  font-size: 15px;
+  font-weight: 600;
+
+  @media(max-width: 481px) {
+    width: 60%;
+  }
+
+}
+
+.nome-label {
+  font-weight: 500;
+  color: var(--branco-principal);
 }
 
 .dispositivos__lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
 
-    @media (max-width: 481px) {
-        flex-direction: column;
-    }
+  @media (max-width: 481px) {
+    flex-direction: column;
+  }
 }
 
 .dispositivos {
-    text-align: center;
-    background-color: #000000;
+  text-align: center;
 
 }
 
 .dispositivos__titulo {
-    font-family: var(--fonte-primaria);
-    font-size: 2.4rem;
-    color: var(--branco-principal);
+  font-family: var(--fonte-primaria);
+  font-size: 2.4rem;
+  color: var(--branco-principal);
 }
 
 .lista__item {
-    font-family: var(--fonte-primaria);
-    font-size: 1.5rem;
-    color: var(--branco-principal);
+  font-family: var(--fonte-primaria);
+  font-size: 1.5rem;
+  color: var(--branco-principal);
 }
 
 .sobre {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .criador {
-    flex-basis: 300px;
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .criador img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-  
-  .criador h3 {
-    margin-top: 10px;
-  }
-  
-  .criador p {
-    margin-top: 10px;
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px;
-    justify-content: center;
-  }
-  
-  .member {
-    width: 200px;
-    padding: 50px;
-    margin: 10px;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  
-  .member img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .member:hover {
-    transform: scale(1.3);
-    transition: all 0.4s;
-    z-index: 10;
-  }
-  
-  .member h3 {
-    margin: 0;
-    color: #FFFFFF;
-  }
-  
-  .member ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-  }
-  
-  .member ul li {
-    display: inline-block;
-    margin-right: 5px;
-  }
-  
-  .member ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 5px;
-  }
-  
-  .member ul li a:hover {
-    background-color: white;
-    color: #202020;
-  }
-  
-  .thank-you-message {
-    text-align: center;
-  }
+.criador {
+  flex-basis: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.criador img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.criador h3 {
+  margin-top: 10px;
+}
+
+.criador p {
+  margin-top: 10px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: center;
+}
+
+.member {
+  width: 200px;
+  padding: 50px;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.member:hover {
+  transform: scale(1.3);
+  transition: all 0.4s;
+  z-index: 10;
+}
+
+.member h3 {
+  font-family: var(--fonte-primaria);
+  margin: 0;
+  color:var(--branco-principal);
+}
+
+.member ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.member ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.member ul li a {
+  font-family: var(--fonte-primaria);
+  color: var(--branco-principal);
+  text-decoration: none;
+  padding: 5px;
+}
+
+.member ul li a:hover {
+  background-color: white;
+  color: #202020;
+}
+
+.footer {
+  text-align: center;
+  font-family: var(--fonte-primaria);
+  color: var(--branco-principal);
+}
 
 
 .input[type='number'] {
-    padding: 5px;
-    width: 50px;
-  }
-  
+  padding: 5px;
+  width: 50px;
+}
+
 .form label {
-    padding-left: 20px;
-  }
-  
+  padding-left: 20px;
+}
+
 .result-style {
+  display: flex;
+  text-align: left;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px rgb(0 0 0 / 0.7);
+  font-family: var(--fonte-primaria);
+  color: var(--branco-principal);
+  box-sizing: border-box;
+}
+
+.img {
+  max-height: 200px;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+
+
+@media (min-width: 482px) and (max-width: 700px){
+  .cabecalho__menu_link{
+    font-size: 30px;
+  }
+
+  .cabecalho__menu ul{
     display: flex;
-    text-align: left;
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 20px;
-    box-shadow: 0 5px 30px rgb(0 0 0 / 0.7);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-sizing: border-box;
+    justify-content: space-between;
+  }
 
+  .titulo__personagem{
+    font-size: 25px;
+  }
+  .personagem__morty{
+    grid-template-columns: 70% 60%;
+  }
+
+  .personagem__rick{
+    grid-template-columns: 70% 60%;
 }
 
-.img{
-    max-height: 200px;
-    padding-right: 20px;
-    border-radius: 20px;
-}
+  .descricao__personagem{
+    font-size: 20px;
+  }
 
-footer p {
-  margin: 0;
-  font-size: 14px;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
+  .botao__personagem{
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .imagens-personagem{
+    width: 150%;
+  }
 }
