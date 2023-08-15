@@ -317,10 +317,22 @@ main {
   font-family: var(--fonte-primaria);
   color: var(--branco-principal);
   box-sizing: border-box;
+  
+  @media (max-width: 481px) {
+    display:block;
+  }
+
 }
 
-.img {
-  max-height: 200px;
+.content{
+  font-family: var(--fonte-primaria);
+  color: var(--branco-principal);
+  text-align: center;
+}
+
+.imagemAPI {
+  max-width: 400px;
+  max-height: 400px;
   padding-right: 20px;
   border-radius: 20px;
 }
